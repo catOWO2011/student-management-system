@@ -4,3 +4,11 @@ server:
     context-path: /api
   # Set the default port from 8080 to 5000
   port: 5000
+
+app:
+  # DataSource Configuration
+  datasource:
+    jdbc-url: jdbc:postgresql://${URL_DATABASE}
+    username: postgres
+    password: ${STUDENT_SYSTEM_DATABASE_PASSWORD}
+    pool-size: 30
