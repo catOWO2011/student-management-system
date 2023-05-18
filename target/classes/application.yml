@@ -8,7 +8,7 @@ server:
 app:
   # DataSource Configuration
   datasource:
-    jdbc-url: jdbc:postgresql://ep-delicate-star-454119.us-east-2.aws.neon.tech/neondb
-    username: nanocatowo2011
-    password: 3zFwvISLM7br
+    jdbc-url: jdbc:postgresql://${URL_DATABASE}
+    username: ${STUDENT_SYSTEM_DATABASE_USER}
+    password: ${STUDENT_SYSTEM_DATABASE_PASSWORD}
     pool-size: 30
