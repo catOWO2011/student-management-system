@@ -9,6 +9,6 @@ app:
   # DataSource Configuration
   datasource:
     jdbc-url: jdbc:postgresql://${URL_DATABASE}
-    username: postgres
+    username: ${STUDENT_SYSTEM_DATABASE_USER}
     password: ${STUDENT_SYSTEM_DATABASE_PASSWORD}
     pool-size: 30
