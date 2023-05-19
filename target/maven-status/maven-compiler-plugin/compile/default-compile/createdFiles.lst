@@ -1,0 +1,6 @@
+com/nanocat/studentmanagementsystem/student/Student.class
+com/nanocat/studentmanagementsystem/datasource/Datasource.class
+com/nanocat/studentmanagementsystem/student/Student$Gender.class
+com/nanocat/studentmanagementsystem/student/StudentController.class
+com/nanocat/studentmanagementsystem/StudentManagementSystemApplication.class
+com/nanocat/studentmanagementsystem/StudentManagementSystemApplication$1.class
