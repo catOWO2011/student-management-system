@@ -26,4 +26,8 @@ public class StudentService {
     // TODO: Verify that email is not taken
     studentDataAccessService.insertStudent(newStudentId, student);
   }
+
+  public void deleteStudent(UUID studentId) {
+    studentDataAccessService.deleteStudent(studentId);
+  }
 }

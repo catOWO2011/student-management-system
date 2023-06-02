@@ -42,6 +42,11 @@ public class StudentDataAccessService {
     );
   }
 
+  public int deleteStudent(UUID studentId) {
+    String sql = "DELETE FROM student WHERE student_id = ?";
+    return jdbcTemplate.update(sql, studentId);
+  }
+
   private RowMapper<Student> getStudentRowMapper() {
     return (resultSet, rowNum) -> {
       UUID studentId = UUID.fromString(resultSet.getString("student_id"));
