@@ -40,4 +40,15 @@ public class Student {
   public String getEmail() {
     return email;
   }
+
+  @Override
+  public String toString() {
+    return "Student{" +
+            "studentId=" + studentId +
+            ", firstName='" + firstName + '\'' +
+            ", lastName='" + lastName + '\'' +
+            ", email='" + email + '\'' +
+            ", gender=" + gender +
+            '}';
+  }
 }

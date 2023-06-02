@@ -1,11 +1,11 @@
 package com.nanocat.studentmanagementsystem.student;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
+@RequestMapping("/students")
 public class StudentController {
   private final StudentService studentService;
 
@@ -13,8 +13,13 @@ public class StudentController {
     this.studentService = studentService;
   }
 
-  @GetMapping("/students")
+  @GetMapping
   public List<Student> getAllStudents() {
     return studentService.getAllStudents();
+  }
+
+  @PostMapping
+  public void addNewStudent(@RequestBody Student student) {
+    studentService.addNewStudent(student);
   }
 }
