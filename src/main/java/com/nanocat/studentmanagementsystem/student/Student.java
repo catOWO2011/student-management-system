@@ -8,17 +8,19 @@ public class Student {
   private final String lastName;
   private final String email;
   private final Gender gender;
+  private final String largePicture;
 
   enum Gender {
     MALE, FEMALE
   }
 
-  public Student(UUID studentId, String firstName, String lastName, String email, Gender gender) {
+  public Student(UUID studentId, String firstName, String lastName, String email, Gender gender, String largePicture) {
     this.studentId = studentId;
     this.firstName = firstName;
     this.lastName = lastName;
     this.email = email;
     this.gender = gender;
+    this.largePicture = largePicture;
   }
 
   public UUID getStudentId() {
@@ -41,6 +43,10 @@ public class Student {
     return email;
   }
 
+  public String getLargePicture() {
+    return largePicture;
+  }
+
   @Override
   public String toString() {
     return "Student{" +
@@ -48,7 +54,8 @@ public class Student {
             ", firstName='" + firstName + '\'' +
             ", lastName='" + lastName + '\'' +
             ", email='" + email + '\'' +
-            ", gender=" + gender +
+            ", gender=" + gender + '\'' +
+            ", largePicture=" + largePicture + '\'' +
             '}';
   }
 }
