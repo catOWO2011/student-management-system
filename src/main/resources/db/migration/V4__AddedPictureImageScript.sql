@@ -1,0 +1,1 @@
+ALTER TABLE student ADD COLUMN large_picture VARCHAR(52);
